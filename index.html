@@ -3,19 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Многостраничник</title>
-    <link rel="stylesheets" href="stylesheets/style.css">
+    <title>Главная</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
+
 <body>
-    <nav class="mainMenu">
-        <a class="mainMenuLink" href="index.html">Главная</a>
-        <a class="mainMenuLink" href="courses.html">Курсы</a>
-        <a class="mainMenuLink" href="rental.html">Прокат</a>
-        <a class="mainMenuLink" href="custom.html">Кастом</a>
-        <a class="mainMenuLink" href="shop.html">Магазин</a>
+<section class="first">
+    <!-- ЛОГОТИП СЛЕВА СВЕРХУ -->
+    <div class="logo-small">
+        <img src="images/2logoo.svg" alt="Логотип">
+    </div>
+    
+    <!-- БУРГЕР -->
+    <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <!-- МЕНЮ -->
+    <div class="menu" id="menu">
+        <div class="menu-links">
+            <a href="index.html">Главная</a>
+            <a href="about.html">О нас</a>
+            <a href="courses.html">Курсы</a>
+            <a href="404.html">Прокат</a>
+            
+            <a href="shop.html">Магазин</a>
+        </div>
+    </div>
+    
+    <!-- ОСНОВНОЙ БЛОК -->
+    <main class="hero">
+    
+        <!-- БОЛЬШОЕ PNG -->
+        <div class="main-logo">
+            <img src="images/novylogo2.png" alt="Главный логотип">
+        </div>
+    
+    
+        <a href="courses.html" class="btn">
+            Записаться
+        </a>
+        <div class="floating-squares">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
 
-    </nav>
-    <h1>Главная страница</h1>
+        </div>
+        <div class="video-block video-1">
+            <video class="video" autoplay muted loop playsinline>
+                <source src="images/vid4.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="video-block video-2">
+            <video class="video" autoplay muted loop playsinline>
+                <source src="images/vid2.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="video-block video-3">
+            <video class="video" autoplay muted loop playsinline>
+                <source src="images/vid3.mp4" type="video/mp4">
+            </video>
+        </div>
+        </div>
+</section>
+<section class="seasonal">
 
+    <!-- Бегущая строка -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>СЕЗОННЫЕ НОВИНКИ  </span>
+            <span>■ </span>
+            <span>СЕЗОННЫЕ НОВИНКИ  </span>
+            <span>■ </span>
+            <span>СЕЗОННЫЕ НОВИНКИ  </span>
+            <span>■ </span>
+            <span>СЕЗОННЫЕ НОВИНКИ  </span>
+            <span>■ </span>
+            <span>СЕЗОННЫЕ НОВИНКИ  </span>
+            <span>■ </span>
+            <span>СЕЗОННЫЕ НОВИНКИ  </span>
+            <span>■ </span>
+        </div>
+    </div>
+            <div class="video-block video-4">
+                <video class="video" autoplay muted loop playsinline>
+                    <source src="images/video5.mp4" type="video/mp4">
+                </video>
+            </div>
+    <!-- Товары -->
+    <div class="products">
+
+        <a href="#" class="product-card">
+            <img src="images/vosk1.png" alt="">
+            <span class="arrow">↗</span>
+        </a>
+
+        <a href="#" class="product-card">
+            <img src="images/vosk2.png" alt="">
+            <span class="arrow">↗</span>
+        </a>
+
+        <a href="#" class="product-card">
+            <img src="images/vosk3.png" alt="">
+            <span class="arrow">↗</span>
+        </a>
+
+
+
+    </div>
+
+    <!-- Кнопка -->
+    <a href="shop.html" class="more-btn">
+        Больше нашей продукции
+    </a>
+        <div class="ticker1">
+        <div class="ticker-track1">
+            <span>НАШИ ЛУЧШИЕ КУРСЫ  </span>
+            <span>■ </span>
+            <span>НАШИ ЛУЧШИЕ КУРСЫ  </span>
+            <span>■ </span>
+            <span>НАШИ ЛУЧШИЕ КУРСЫ  </span>
+            <span>■ </span>
+            <span>НАШИ ЛУЧШИЕ КУРСЫ  </span>
+            <span>■ </span>
+            <span>НАШИ ЛУЧШИЕ КУРСЫ  </span>
+            <span>■ </span>
+            <span>НАШИ ЛУЧШИЕ КУРСЫ  </span>
+            <span>■ </span>
+        </div>
+    </div>
+</section>
+        
+    </main>
+<script src="javascripts/scripts.js"></script>
+<section class="cursy">
+
+</section>
 </body>
+<footer class="footer">
+    <!-- Бегущая строка -->
+    <div class="footer-marquee">
+        <div class="marquee-track">
+            <!-- Первый набор -->
+            <img src="images/coffe.svg" alt="Surf Coffee">
+            <img src="images/bear.svg" alt="Береги Камчатку">
+            <img src="images/wave.svg" alt="Quiksilver">
+            <img src="images/face.svg" alt="The North Face">
+            <img src="images/bull.svg" alt="Red Bull">
+
+            <!-- Дубликат для бесконечной анимации -->
+            <img src="images/coffe.svg" alt="Surf Coffee">
+            <img src="images/bear.svg" alt="Береги Камчатку">
+            <img src="images/wave.svg" alt="Quiksilver">
+            <img src="images/face.svg" alt="The North Face">
+            <img src="images/bull.svg" alt="Red Bull">
+                        <img src="images/coffe.svg" alt="Surf Coffee">
+                        <img src="images/bear.svg" alt="Береги Камчатку">
+                        <img src="images/wave.svg" alt="Quiksilver">
+                        <img src="images/face.svg" alt="The North Face">
+                        <img src="images/bull.svg" alt="Red Bull">
+                                    <img src="images/coffe.svg" alt="Surf Coffee">
+                                    <img src="images/bear.svg" alt="Береги Камчатку">
+                                    <img src="images/wave.svg" alt="Quiksilver">
+                                    <img src="images/face.svg" alt="The North Face">
+                                    <img src="images/bull.svg" alt="Red Bull">
+                                                                        <img src="images/coffe.svg" alt="Surf Coffee">
+                                                                        <img src="images/bear.svg" alt="Береги Камчатку">
+                                                                        <img src="images/wave.svg" alt="Quiksilver">
+                                                                        <img src="images/face.svg" alt="The North Face">
+                                                                        <img src="images/bull.svg" alt="Red Bull">
+
+                    
+        </div>
+    </div>
+
+    <!-- Основной блок -->
+    <div class="footer-content">
+
+        <div class="footer-contacts">
+            <a href="">+7 (916) 080-64-24</a>
+            <a href="">@rinjanai</a>
+            <a href="">ankysurf@mail.ru</a>
+        </div>
+
+        <div class="footer-logo">
+           <img src="images/footerlogo.png">
+        </div>
+
+        <nav class="footer-nav">
+            <a href="#">О нас</a>
+            <a href="#">Курсы</a>
+            <a href="#">Прокат</a>
+            <a href="#">Магазин</a>
+        </nav>
+
+    </div>
+</footer>
 </html>

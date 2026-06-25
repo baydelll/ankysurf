@@ -1,0 +1,1135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ЛОГО СВЕРХУ */
+
+.logo-small {
+    position: fixed;
+    top: 3vw;
+    left: 3vw;
+}
+
+.logo-small img {
+    width: 4vw;
+}
+
+/* БУРГЕР */
+
+.burger {
+    position: fixed;
+    top: 3vw;
+    right: 3vw;
+    width: 2.5vw;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger span {
+    display: block;
+    width: 100%;
+    height: 0.15vw;
+    background: white;
+    margin: 0.4vw 0;
+    transition: 0.3s;
+}
+.burger.active span{
+    background: #000;
+}
+/* АНИМАЦИЯ БУРГЕРА */
+
+.burger.active span:nth-child(1) {
+    transform: translateY(0.95vw) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-0.95vw) rotate(-45deg);
+}
+
+.burger.active span:nth-child(4) {
+    opacity: 0;
+}
+
+/* ОСНОВНОЙ ЭКРАН */
+
+.hero {
+    height: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transform: translateY(-1vw);
+}
+
+.main-logo img {
+    width: 85vw;
+
+}
+
+
+
+.btn {
+
+    display: inline-block;
+    
+        padding: 1.3vw 5vw;
+        margin-left: -4vw;
+    
+        border: 0.12vw solid white;
+    
+        color: white;
+        text-decoration: none;
+    
+        font-size: 1.2vw;
+    
+        transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* МЕНЮ */
+
+.menu {
+    position: fixed;
+
+    top: 0;
+    right: -18vw;
+
+    width: 10vw;
+    height: 70vh;
+
+    background: #ffffff;
+
+    transition: 0.35s ease;
+    z-index: 1000;
+}
+
+.menu.active {
+    right: 0;
+}
+
+.menu-links {
+    margin-top: 20vw;
+    padding-left: 1.5vw;
+}
+
+.menu-links a {
+    font-family: Arial, sans-serif;
+    font-size: 1.2vw;
+    font-weight: normal;
+
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    margin-bottom: 0.8vw;
+    padding-bottom: 0.15vw;
+
+    border-bottom: 0.08vw solid #666;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.floating-squares {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.square {
+    position: absolute;
+
+    width: 4vw;
+    height: 4vw;
+
+    background: white;
+
+    mix-blend-mode: difference;
+    z-index: 4;
+    will-change: transform;
+}
+.video-block {
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.video-1 {
+
+        width: 16vw;
+            height: 11vw;
+        
+            bottom: 14vw;
+            left: 12vw;
+    
+}
+
+/* второе видео */
+.video-2 {
+
+
+        width: 9vw;
+        height: 8vw;
+        
+        bottom: 5vw;
+        right: 15vw;
+}
+
+/* третье видео */
+.video-3 {
+    width: 9vw;
+    height: 11vw;
+
+    top: 6vw;
+    right: 30vw;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) invert(100%);
+    display: block;
+    transition: 0.2s;
+
+}
+
+
+
+.video-block:hover .video {
+    animation: glitch 0.18s infinite;
+}
+
+.seasonal {
+    background: #000;
+    padding: 1vw 0;
+    text-align: center;
+}
+
+/* БЕГУЩАЯ СТРОКА */
+
+.ticker {
+    width: 100%;
+    overflow: hidden;
+
+    border-top: 0.12vw solid #fff;
+    border-bottom: 0.12vw solid #fff;
+
+    margin-bottom: 5vw;
+}
+
+.ticker-track {
+    display: flex;
+    width: max-content;
+
+    animation: ticker 10s linear infinite;
+}
+
+.ticker-track span {
+    font-size: 2.5vw;
+    color: white;
+
+    white-space: nowrap;
+    padding: 1vw 2vw;
+}
+
+.seasonal{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: auto;
+}
+
+/* КАРТОЧКИ */
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    padding-right: 4vw;
+    margin-bottom: 5vw;
+}
+
+.product-card {
+    position: relative;
+    display: block;
+    width: 16vw;
+    height: 16vw;
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.35s;
+}
+
+.product-card:hover img {
+    transform: scale(1.03);
+}
+
+.arrow {
+    position: absolute;
+    top: 0.5vw;
+    right: -2vw;
+
+    font-size: 2vw;
+    color: white;
+}
+
+.video-4 {
+    width: 11vw;
+    height: 8vw;
+    left: 10vw;
+    margin-top: 14vw;
+
+}
+
+.ticker1 {
+    width: 100%;
+    overflow: hidden;
+
+    border-top: 0.12vw solid #fff;
+    border-bottom: 0.12vw solid #fff;
+    margin-top: 4vw;
+    margin-bottom: 1vw;
+}
+
+.ticker-track1 {
+    display: flex;
+    width: max-content;
+
+    animation: ticker 10s linear infinite;
+}
+
+.ticker-track1 span {
+    font-size: 2.5vw;
+    color: white;
+
+    white-space: nowrap;
+    padding: 1vw 2vw;
+}
+/* КНОПКА */
+
+.more-btn {
+    display: inline-block;
+
+    padding: 1.3vw 5vw;
+    margin-left: -4vw;
+
+    border: 0.12vw solid white;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.2vw;
+
+    transition: 0.3s;
+}
+
+.more-btn:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+.footer {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    overflow: hidden;
+    margin-top: 3vw;
+}
+
+/* ======================
+   БЕГУЩАЯ СТРОКА
+====================== */
+
+.footer-marquee {
+    width: 100%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 4.7vw;
+    width: max-content;
+    padding: 1.5vw 0;
+    animation: marquee 10s linear infinite;
+}
+
+.footer-marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.marquee-track img {
+    height: 6vw;
+    width: auto;
+    flex-shrink: 0;
+}
+
+
+
+/* ======================
+   FOOTER
+====================== */
+
+.footer-content {
+    min-height: 30vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 8.5vw;
+}
+
+/* Контакты */
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6vw;
+}
+
+.footer-contacts a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition: .3s;
+}
+
+.footer-contacts a:hover {
+    opacity: .7;
+}
+
+/* Лого */
+
+
+.footer-logo img{
+    width: 25vw;
+    padding-right: 5vw;
+
+}
+
+/* Меню */
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    padding-right: 5vw;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition: .3s;
+}
+
+.footer-nav a:hover {
+    opacity: .7;
+}
+
+.page-404 {
+    width: 80vw;
+    height: 54vw;
+    position: relative;
+    bottom: 2vw;
+    left: 8vw;
+    background: url("../images/fon.png") center center / cover no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.page-404__text {
+    position: absolute;
+    top: 6.5vw;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+    color: #fff;
+
+    font-size: 1.5vw;
+    line-height: 0.8;
+    white-space: nowrap;
+}
+
+.page-404__btn {
+    position: absolute;
+    left: 40vw;
+    bottom: 7vw;
+    transform: translateX(-50%);
+
+    width: 16vw;
+    height: 3.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0.14vw solid #fff;
+
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-family: Arial, sans-serif;
+
+    transition: 0.3s ease;
+}
+
+.page-404__btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.about-page {
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+/* ---------- О НАС ---------- */
+
+.about-hero {
+    padding-top: 12vw;
+    padding-bottom: 6vw;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 6vw;
+    z-index: 10;
+    position: relative;
+
+}
+.nal img{
+    width: 70%;
+    margin-top: -15vw;
+    margin-left: 17vw;
+    z-index: 1;
+    position: relative;
+}
+
+
+/* ---------- 3 ФОТО ---------- */
+
+.about-gallery-top {
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    margin-bottom: 13vw;
+}
+
+.gallery-item {
+    width: 15vw;
+    height: 15vw;
+
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- БОЛЬШОЙ ТЕКСТ ---------- */
+
+.about-manifesto {
+    position: relative;
+    height: 55vw;
+}
+
+.text {
+    position: absolute;
+    width: 18vw;
+
+    font-size: 1.2vw;
+    line-height: 1.2;
+    z-index: 2;
+}
+
+.text-1 {
+    top: 0;
+    left: 25vw;
+}
+
+.text-2 {
+    top: 8vw;
+    right: 12vw;
+}
+
+.text-3 {
+
+    left: 6vw;
+    bottom: 18vw;
+}
+
+.text-4 {
+    right: 40vw;
+    bottom: 15vw;
+}
+
+.brand-image {
+    width: 95%;
+    display: block;
+    margin-left: 3.2vw;
+    padding-top: 2vw;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.brand-image.move-down {
+    transform: translateY(45vw);
+
+}
+
+
+.about-carousel {
+    position: relative;
+    width: 100%;
+    height: 25vw;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 12vw;
+    transition: all .6s ease;
+    transform-origin: center center;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 3vw;
+    height: 3vw;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.prev {
+    left: 2vw;
+}
+
+.next {
+    right: 2vw;
+}
+
+.about-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    margin: 24vw 0 0;
+    position: relative;
+
+}
+
+
+
+/* лента */
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s ease;
+    will-change: transform;
+}
+
+.shop {
+    width: 100%;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: 12vw 12vw 12vw;
+    justify-content: center;
+
+    column-gap: 14vw;
+    row-gap: 4vw;
+
+    margin-top: 4vw;
+    padding-bottom: 8vw;
+}
+
+.product {
+    color: #fff;
+    text-decoration: none;
+}
+
+.product img {
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
+    display: block;
+}
+
+.product h3 {
+    margin-top: .7vw;
+    font-size: 1.35vw;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.product p {
+    margin-top: .6vw;
+    font-size: 1.2vw;
+}
+
+.shop-text {
+    width: 14vw;
+
+    color: #fff;
+
+    font-size: 1.45vw;
+    line-height: 1.15;
+
+    align-self: center;
+}
+
+/* строка 1 */
+
+.p1 {
+    grid-column: 1;
+}
+
+.t1 {
+    grid-column: 2;
+}
+
+.p2 {
+    grid-column: 3;
+}
+
+/* строка 2 */
+
+.p3 {
+    grid-column: 2;
+    margin-top: 1vw;
+}
+
+/* строка 3 */
+
+.p4 {
+    grid-column: 1;
+}
+
+.t2 {
+    grid-column: 2;
+}
+
+.p5 {
+    grid-column: 3;
+}
+
+/* строка 4 */
+
+.t3 {
+    grid-column: 1;
+}
+
+.p6 {
+    grid-column: 2;
+}
+
+.t4 {
+    grid-column: 3;
+}
+
+/* строка 5 */
+
+.p7 {
+    grid-column: 1;
+}
+
+.t5 {
+    grid-column: 2;
+}
+
+.p8 {
+    grid-column: 3;
+}
+
+.product img {
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+/* увеличение картинки при наведении */
+.product:hover img {
+    transform: scale(1.08);
+}
+
+/* заголовок товара — меньше и плотнее */
+.product h3 {
+    margin-top: .7vw;
+    font-size: 1.05vw;
+    /* было 1.35vw */
+    font-weight: 400;
+    line-height: 1.05;
+    /* было 1.15 */
+}
+
+/* цена — меньше и аккуратнее */
+.product p {
+    margin-top: .4vw;
+    font-size: 0.95vw;
+    /* было 1.2vw */
+    line-height: 1.05;
+    opacity: 0.85;
+    /* слегка мягче визуально */
+}
+
+.product {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* увеличивается весь товар, текст остаётся на месте */
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* картинка не должна отдельно масштабироваться */
+.product img {
+    width: 12vw;
+    height: 12vw;
+    object-fit: cover;
+    display: block;
+    transition: none;
+}
+
+/* ===== КАРТОЧКИ КУРСОВ ===== */
+
+.courses-section {
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.courses-card {
+    width: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(5vw);
+    padding-bottom: 3vw;
+    transition:
+        opacity 1s ease,
+        transform 1s ease;
+}
+
+.courses-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.courses-left {
+    margin-left: 8vw;
+}
+
+.courses-right {
+    margin-left: auto;
+    margin-right: 8vw;
+}
+
+.courses-card img {
+    width: 45vw;
+    height: auto;
+    display: block;
+            box-shadow:
+                0 0 1vw rgba(255, 255, 255, 0.35),
+                0 0 2vw rgba(255, 255, 255, 0.25),
+                0 0 4vw rgba(255, 255, 255, 0.15);
+}
+
+.courses-btn {
+    width: 18vw;
+    height: 4vw;
+
+    margin-top: 2vw;
+
+    background: transparent;
+    border: 0.15vw solid #ffffff;
+
+    color: #ffffff;
+
+    font-size: 1.2vw;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.courses-btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+
+.courses-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    z-index: 9999;
+}
+
+.courses-modal.active {
+    display: flex;
+}
+
+/* ===== КАРТОЧКА ФОРМЫ ===== */
+
+/* ===== КАРТОЧКИ КУРСОВ ===== */
+
+.courses-section{
+    width:100%;
+    margin: top 2vw;
+}
+
+.courses-card{
+    width:40vw;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    opacity:0;
+    transform:translateY(5vw);
+
+    transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.courses-visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.courses-left{
+    margin-left:8vw;
+}
+
+.courses-right{
+    margin-left:auto;
+    margin-right:8vw;
+}
+
+.courses-card img{
+    width:40vw;
+    height:auto;
+    display:block;
+}
+
+.courses-btn{
+    width:18vw;
+    height:4vw;
+
+    margin-top:2vw;
+
+    background:transparent;
+    border:0.15vw solid #ffffff;
+
+    color:#ffffff;
+
+    font-size:1.2vw;
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.courses-btn:hover{
+    background:#ffffff;
+    color:#000000;
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+
+.courses-modal{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,0.85);
+
+    z-index:9999;
+}
+
+.courses-modal.active{
+    display:flex;
+}
+
+/* ===== КАРТОЧКА ФОРМЫ ===== */
+
+.courses-modal-content {
+
+    width: 65vw;
+    height: 42vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("img/form-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+/* ===== КРЕСТИК ===== */
+
+.courses-close{
+
+    position:absolute;
+
+    top:1vw;
+    right:2vw;
+
+    font-size:3vw;
+
+    cursor:pointer;
+
+    color:#ffffff;
+}
+
+/* ===== ЗАГОЛОВОК ===== */
+
+.courses-title{
+
+    margin-top:10vw;
+    margin-bottom:10vw;
+
+    font-size:6vw;
+    font-weight:400;
+
+    color:#ffffff;
+}
+
+/* ===== ФОРМА ===== */
+
+.courses-form{
+
+    display:flex;
+    flex-direction:column;
+}
+
+.courses-input{
+
+    width:100%;
+
+    margin-bottom:5vw;
+
+    padding:1vw 0;
+
+    background:transparent;
+
+    border:none;
+    border-bottom:0.15vw solid #ffffff;
+
+    outline:none;
+
+    color:#ffffff;
+    font-size:2vw;
+}
+
+.courses-input::placeholder{
+    color:rgba(255,255,255,0.75);
+}
+
+/* ===== КНОПКА ОТПРАВКИ ===== */
+
+.courses-submit{
+
+    width:30vw;
+    height:6vw;
+
+    margin:4vw auto 0;
+
+    background:transparent;
+
+    border:0.15vw solid #ffffff;
+
+    color:#ffffff;
+
+    font-size:1.5vw;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.courses-submit:hover{
+
+    background:#ffffff;
+    color:#000000;
+}

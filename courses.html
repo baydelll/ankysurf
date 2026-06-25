@@ -5,12 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курсы</title>
-    <link rel="stylesheets" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
-    <h1>Курсы</h1>
+<div class="logo-small">
+    <img src="images/2logoo.svg" alt="Логотип">
+</div>
 
+<!-- БУРГЕР -->
+<div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- МЕНЮ -->
+<div class="menu" id="menu">
+    <div class="menu-links">
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="courses.html">Курсы</a>
+        <a href="404.html">Прокат</a>
+
+        <a href="shop.html">Магазин</a>
+    </div>
+</div>
+<main class="about-page">
+
+    <!-- Заголовок -->
+    <section class="about-hero">
+
+        <h1 class="about-title">
+            Курсы
+        </h1>
+        <div class="nal">
+            <img src="images/naloz.png" alt="nali">
+        </div>
+    </section>
+    <section class="courses-section">
+        
+        <div class="courses-card courses-left courses-hidden">
+            <img src="images/card1.png" alt="">
+            <button class="courses-btn courses-open-modal">Записаться</button>
+        </div>
+    
+        <div class="courses-card courses-right courses-hidden">
+            <img src="images/card2.png" alt="">
+            <button class="courses-btn courses-open-modal">Записаться</button>
+        </div>
+    
+        <div class="courses-card courses-left courses-hidden">
+            <img src="images/card3.png" alt="">
+            <button class="courses-btn courses-open-modal">Записаться</button>
+        </div>
+    
+        <div class="courses-card courses-right courses-hidden">
+            <img src="images/card4.png" alt="">
+            <button class="courses-btn courses-open-modal">Записаться</button>
+        </div>
+    
+    </section>
+    
+    <div class="courses-modal" id="coursesModal">
+    
+        <div class="courses-modal-content">
+    
+            <span class="courses-close">&times;</span>
+    
+            <h2 class="courses-title">
+                Впервые у нас?
+            </h2>
+    
+            <form class="courses-form">
+    
+                <input class="courses-input" type="text" placeholder="Имя Фамилия" required>
+    
+                <input class="courses-input" type="tel" placeholder="Телефон" required>
+    
+                <input class="courses-input" type="password" placeholder="Пароль" required>
+    
+                <button class="courses-submit" type="submit">
+                    Зарегистрироваться
+                </button>
+    
+            </form>
+    
+        </div>
+    
+    </div>
+    <script src="javascripts/script4.js"></script>
 </body>
-
+    <footer class="footer">
+        <!-- Бегущая строка -->
+        <div class="footer-marquee">
+            <div class="marquee-track">
+                <!-- Первый набор -->
+                <img src="images/coffe.svg" alt="Surf Coffee">
+                <img src="images/bear.svg" alt="Береги Камчатку">
+                <img src="images/wave.svg" alt="Quiksilver">
+                <img src="images/face.svg" alt="The North Face">
+                <img src="images/bull.svg" alt="Red Bull">
+    
+                <!-- Дубликат для бесконечной анимации -->
+                <img src="images/coffe.svg" alt="Surf Coffee">
+                <img src="images/bear.svg" alt="Береги Камчатку">
+                <img src="images/wave.svg" alt="Quiksilver">
+                <img src="images/face.svg" alt="The North Face">
+                <img src="images/bull.svg" alt="Red Bull">
+                <img src="images/coffe.svg" alt="Surf Coffee">
+                <img src="images/bear.svg" alt="Береги Камчатку">
+                <img src="images/wave.svg" alt="Quiksilver">
+                <img src="images/face.svg" alt="The North Face">
+                <img src="images/bull.svg" alt="Red Bull">
+                <img src="images/coffe.svg" alt="Surf Coffee">
+                <img src="images/bear.svg" alt="Береги Камчатку">
+                <img src="images/wave.svg" alt="Quiksilver">
+                <img src="images/face.svg" alt="The North Face">
+                <img src="images/bull.svg" alt="Red Bull">
+                <img src="images/coffe.svg" alt="Surf Coffee">
+                <img src="images/bear.svg" alt="Береги Камчатку">
+                <img src="images/wave.svg" alt="Quiksilver">
+                <img src="images/face.svg" alt="The North Face">
+                <img src="images/bull.svg" alt="Red Bull">
+    
+    
+            </div>
+        </div>
+    
+        <!-- Основной блок -->
+        <div class="footer-content">
+    
+            <div class="footer-contacts">
+                <a href="">+7 (916) 080-64-24</a>
+                <a href="">@rinjanai</a>
+                <a href="">ankysurf@mail.ru</a>
+            </div>
+    
+            <div class="footer-logo">
+                <img src="images/footerlogo.png">
+            </div>
+    
+            <nav class="footer-nav">
+                <a href="#">О нас</a>
+                <a href="#">Курсы</a>
+                <a href="#">Прокат</a>
+                <a href="#">Магазин</a>
+            </nav>
+    
+        </div>
+    </footer>
 </html>
