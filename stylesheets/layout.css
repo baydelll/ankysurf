@@ -11,7 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ЛОГО СВЕРХУ */
 
 .logo-small {
     position: fixed;
@@ -23,7 +22,7 @@ body {
     width: 4vw;
 }
 
-/* БУРГЕР */
+
 
 .burger {
     position: fixed;
@@ -45,7 +44,7 @@ body {
 .burger.active span{
     background: #000;
 }
-/* АНИМАЦИЯ БУРГЕРА */
+
 
 .burger.active span:nth-child(1) {
     transform: translateY(0.95vw) rotate(45deg);
@@ -63,7 +62,7 @@ body {
     opacity: 0;
 }
 
-/* ОСНОВНОЙ ЭКРАН */
+
 
 .hero {
     height: 50vw;
@@ -105,7 +104,7 @@ body {
     color: black;
 }
 
-/* МЕНЮ */
+
 
 .menu {
     position: fixed;
@@ -185,7 +184,7 @@ body {
     
 }
 
-/* второе видео */
+
 .video-2 {
 
 
@@ -196,7 +195,7 @@ body {
         right: 15vw;
 }
 
-/* третье видео */
+
 .video-3 {
     width: 9vw;
     height: 11vw;
@@ -227,7 +226,6 @@ body {
     text-align: center;
 }
 
-/* БЕГУЩАЯ СТРОКА */
 
 .ticker {
     width: 100%;
@@ -259,7 +257,7 @@ body {
     padding: auto;
 }
 
-/* КАРТОЧКИ */
+
 
 .products {
     display: flex;
@@ -329,7 +327,7 @@ body {
     white-space: nowrap;
     padding: 1vw 2vw;
 }
-/* КНОПКА */
+
 
 .more-btn {
     display: inline-block;
@@ -361,9 +359,7 @@ body {
     margin-top: 3vw;
 }
 
-/* ======================
-   БЕГУЩАЯ СТРОКА
-====================== */
+
 
 .footer-marquee {
     width: 100%;
@@ -391,11 +387,6 @@ body {
 }
 
 
-
-/* ======================
-   FOOTER
-====================== */
-
 .footer-content {
     min-height: 30vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -406,7 +397,7 @@ body {
     padding: 0 8.5vw;
 }
 
-/* Контакты */
+
 
 .footer-contacts {
     display: flex;
@@ -425,7 +416,7 @@ body {
     opacity: .7;
 }
 
-/* Лого */
+
 
 
 .footer-logo img{
@@ -434,7 +425,7 @@ body {
 
 }
 
-/* Меню */
+
 
 .footer-nav {
     display: flex;
@@ -513,7 +504,7 @@ body {
     overflow: hidden;
 }
 
-/* ---------- О НАС ---------- */
+
 
 .about-hero {
     padding-top: 12vw;
@@ -536,7 +527,7 @@ body {
 }
 
 
-/* ---------- 3 ФОТО ---------- */
+
 
 .about-gallery-top {
     display: flex;
@@ -557,7 +548,7 @@ body {
     object-fit: cover;
 }
 
-/* ---------- БОЛЬШОЙ ТЕКСТ ---------- */
+
 
 .about-manifesto {
     position: relative;
@@ -671,8 +662,6 @@ body {
 }
 
 
-
-/* лента */
 .carousel-track {
     display: flex;
     transition: transform 0.6s ease;
@@ -729,7 +718,7 @@ body {
     align-self: center;
 }
 
-/* строка 1 */
+
 
 .p1 {
     grid-column: 1;
@@ -743,14 +732,14 @@ body {
     grid-column: 3;
 }
 
-/* строка 2 */
+
 
 .p3 {
     grid-column: 2;
     margin-top: 1vw;
 }
 
-/* строка 3 */
+
 
 .p4 {
     grid-column: 1;
@@ -764,7 +753,7 @@ body {
     grid-column: 3;
 }
 
-/* строка 4 */
+
 
 .t3 {
     grid-column: 1;
@@ -778,7 +767,7 @@ body {
     grid-column: 3;
 }
 
-/* строка 5 */
+
 
 .p7 {
     grid-column: 1;
@@ -801,29 +790,27 @@ body {
     transform-origin: center;
 }
 
-/* увеличение картинки при наведении */
+
 .product:hover img {
     transform: scale(1.08);
 }
 
-/* заголовок товара — меньше и плотнее */
+
 .product h3 {
     margin-top: .7vw;
     font-size: 1.05vw;
-    /* было 1.35vw */
     font-weight: 400;
     line-height: 1.05;
-    /* было 1.15 */
+    
 }
 
-/* цена — меньше и аккуратнее */
+
 .product p {
     margin-top: .4vw;
     font-size: 0.95vw;
-    /* было 1.2vw */
     line-height: 1.05;
     opacity: 0.85;
-    /* слегка мягче визуально */
+
 }
 
 .product {
@@ -833,12 +820,12 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* увеличивается весь товар, текст остаётся на месте */
+
 .product:hover {
     transform: scale(1.05);
 }
 
-/* картинка не должна отдельно масштабироваться */
+
 .product img {
     width: 12vw;
     height: 12vw;
@@ -847,7 +834,6 @@ body {
     transition: none;
 }
 
-/* ===== КАРТОЧКИ КУРСОВ ===== */
 
 .courses-section {
     width: 100%;
@@ -914,7 +900,7 @@ body {
     color: #000000;
 }
 
-/* ===== МОДАЛЬНОЕ ОКНО ===== */
+
 
 .courses-modal {
     position: fixed;
@@ -938,9 +924,7 @@ body {
     display: flex;
 }
 
-/* ===== КАРТОЧКА ФОРМЫ ===== */
 
-/* ===== КАРТОЧКИ КУРСОВ ===== */
 
 .courses-section{
     width:100%;
@@ -1004,7 +988,7 @@ body {
     color:#000000;
 }
 
-/* ===== МОДАЛЬНОЕ ОКНО ===== */
+
 
 .courses-modal{
     position:fixed;
@@ -1028,7 +1012,7 @@ body {
     display:flex;
 }
 
-/* ===== КАРТОЧКА ФОРМЫ ===== */
+
 
 .courses-modal-content {
 
@@ -1046,7 +1030,7 @@ body {
     position: relative;
 }
 
-/* ===== КРЕСТИК ===== */
+
 
 .courses-close{
 
@@ -1062,7 +1046,7 @@ body {
     color:#ffffff;
 }
 
-/* ===== ЗАГОЛОВОК ===== */
+
 
 .courses-title{
 
@@ -1075,7 +1059,7 @@ body {
     color:#ffffff;
 }
 
-/* ===== ФОРМА ===== */
+
 
 .courses-form{
 
@@ -1106,7 +1090,7 @@ body {
     color:rgba(255,255,255,0.75);
 }
 
-/* ===== КНОПКА ОТПРАВКИ ===== */
+
 
 .courses-submit{
 
@@ -1132,4 +1116,37 @@ body {
 
     background:#ffffff;
     color:#000000;
+}
+
+.imgo{
+    width: 30vw;
+}
+.imgo2 {
+    width: 30vw;
+    margin-left: 5vw;
+}
+.images{
+    margin-top: 5vw;
+    
+}
+.more-btn1 {
+    display: inline-block;
+
+    padding: 1.3vw 5vw;
+    margin-left: -4vw;
+
+    border: 0.12vw solid white;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.2vw;
+
+    transition: 0.3s;
+    margin-top: 5vw;
+}
+.more-btn1:hover {
+    background: white;
+    color: black;
+    border-color: black;
 }
